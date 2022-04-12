@@ -23,4 +23,63 @@ public class Main {
             }
         }
     }
+
+    // Create a function that takes two number strings and returns their sum as a string.
+    // Warmup 4/11/22
+
+    public class NumericString {
+        public static String add(String a, String b) {
+            if (a == null || b == null || a.equals("") || b.equals("")) {
+                return "Invalid Operation"}
+            int c = Integer.parseInt(a);
+            int d = Integer.parseInt(b);
+
+            int sum = c + d;
+            return String.valueOf(sum);
+
+        }
+    }
+
+    public class NumericString {
+        public static String add(String a, String b) {
+            try {
+                int c = Integer.parseInt(a);
+                int d = Integer.parseInt(b);
+
+                int sum = c + d;
+                return String.valueOf(sum);
+            } catch (Exception e) {
+                return "Invalid Operation";
+            }
+        }
+    }
+
+
+    // Create a function that takes an array and returns the sum of all numbers in the array.
+    // HW: 4/11/22
+
+    public class Program {
+        public static int arraySum(int[] arr) {
+            int sum = 0;
+
+            for (int i = 0; i < arr.length; i++) { //.size for array lists
+                sum += arr[i];
+            }
+            return sum;
+        }
+    }
+
+    // Write a function that takes the base and height of a triangle and return its area.
+    // Warmup 4/12/22
+
+
+    public class Challenge {
+        public static int triArea(int base, int height) {
+            int area = (base * height) / 2;
+            return area;
+        }
+    }
+
+
+
 }
